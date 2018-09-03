@@ -26,13 +26,13 @@ Follow the format presented in these queries
 
 ## You can find an image of the output at the following link:
 
-![Image of the start of the game output](https://github.com/jhwillia7/Word-Guess-Constructor-Style/images/Game-Start.PNG)
+![Image of the start of the game output](https://github.com/jhwillia7/Word-Guess-Constructor-Style/blob/master/images/Game-Start.PNG)
 
-![Image of guesses output](https://github.com/jhwillia7/Word-Guess-Constructor-Style/images/Guesses.PNG)
+![Image of guesses output](https://github.com/jhwillia7/Word-Guess-Constructor-Style/blob/master/images/Guesses.PNG)
 
-![Image of YOU WIN output](https://github.com/jhwillia7/Word-Guess-Constructor-Style/images/You-Win.PNG)
+![Image of YOU WIN output](https://github.com/jhwillia7/Word-Guess-Constructor-Style/blob/master/images/You-Win.PNG)
 
-![Image of YOU LOSE! output](https://github.com/jhwillia7/Word-Guess-Constructor-Style/images/You-Lose.PNG)
+![Image of YOU LOSE! output](https://github.com/jhwillia7/Word-Guess-Constructor-Style/blob/master/images/You-Lose.PNG)
 
 ## About the Game: 
 
