@@ -2,7 +2,7 @@
 
 ### Overview
 
-In this application I have created you will create a Word Guess command-line game using node.js and constructor functions.
+In this application I have created a Word Guess command-line game using node.js and constructor functions.
 
 ## To install the npm packages run these commands one at a time.
 
