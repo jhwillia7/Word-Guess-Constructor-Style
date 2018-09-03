@@ -34,7 +34,7 @@ Follow the format presented in these queries
 
 ![Image of YOU LOSE! output](https://github.com/jhwillia7/Word-Guess-Constructor-Style/images/You-Lose.PNG)
 
-* **About the Game**: 
+##About the Game:## 
 
 ## letters.js
 Contains a constructor, Letter. This constructor displays an underlying character or a blank placeholder (an underscore), depending on whether or not the you have guessed the letter. That means the constructor defines:
