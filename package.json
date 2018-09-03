@@ -1,0 +1,25 @@
+{
+  "name": "Word-Guess-Constructor-Style",
+  "version": "1.0.0",
+  "description": "### Overview",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jhwillia7/Word-Guess-Constructor-Style.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jhwillia7/Word-Guess-Constructor-Style/issues"
+  },
+  "homepage": "https://github.com/jhwillia7/Word-Guess-Constructor-Style#readme",
+  "dependencies": {
+    "inquirer": "^6.2.0",
+    "node": "^10.9.0",
+    "random-words": "^1.1.0"
+  }
+}

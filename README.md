@@ -1,26 +1,43 @@
-# Advanced JavaScript Assignment: Constructor Word Guess
+# Advanced JavaScript: Constructor Word Guess
 
 ### Overview
 
-This homework assignment is **optional**.
+In this application I have created you will create a Word Guess command-line game using node.js and constructor functions.
 
-In this week's assignment, you will create a Word Guess command-line game using constructor functions.
+## To install the npm packages run these commands one at a time.
 
-![Word Guess Cli](Images/01-WordGuess-Cli.gif)
+* npm install inquirer
+* npm install random-words
+* npm install node
 
-### Submission on BCS
+## Commands to run LIRI
+Follow the format presented in these queries
 
-* Please submit the link to the Github Repository!
+- node index.js 
+- you will be prompted to enter your guesses
+- the screen will show you how many letter are in the word
+- the screen will show you your correct guesses
+- you will be given 7 guesses
+- your guesses will be printed back to you
+- you will lose / decrement the guesses remaining by one everytime you guess incorrectly
+- if you run out of guess the screen will diplay "YOU LOSE!"
+- if you guess the word correctly the screen will display "YOU WIN"
 
-## Instructions
 
-The completed game should meet the following criteria:
+## You can find an image of the output at the following link:
 
-1. The completed game should be able to receive user input using the `inquirer` or `prompt` npm packages.
+![Image of the start of the game output](https://github.com/jhwillia7/Word-Guess-Constructor-Style/images/Game-Start.PNG)
 
-2. Your solution should have, at minimum, three files:
+![Image of guesses output](https://github.com/jhwillia7/Word-Guess-Constructor-Style/images/Guesses.PNG)
 
-* **Letter.js**: Contains a constructor, Letter. This constructor should be able to either display an underlying character or a blank placeholder (such as an underscore), depending on whether or not the user has guessed the letter. That means the constructor should define:
+![Image of YOU WIN output](https://github.com/jhwillia7/Word-Guess-Constructor-Style/images/You-Win.PNG)
+
+![Image of YOU LOSE! output](https://github.com/jhwillia7/Word-Guess-Constructor-Style/images/You-Lose.PNG)
+
+* **About the Game**: 
+
+## letters.js
+Contains a constructor, Letter. This constructor displays an underlying character or a blank placeholder (an underscore), depending on whether or not the you have guessed the letter. That means the constructor defines:
 
   * A string value to store the underlying character for the letter
 
@@ -30,66 +47,22 @@ The completed game should meet the following criteria:
 
   * A function that takes a character as an argument and checks it against the underlying character, updating the stored boolean value to true if it was guessed correctly
 
-* **Word.js**: Contains a constructor, Word that depends on the Letter constructor. This is used to create an object representing the current word the user is attempting to guess. That means the constructor should define:
+## word.js
+Contains a constructor, word that depends on the Letter constructor. This is used to create an object representing the current word the user is attempting to guess. That means the constructor defines:
 
   * An array of `new` Letter objects representing the letters of the underlying word
 
-  * A function that returns a string representing the word. This should call the function on each letter object (the first function defined in `Letter.js`) that displays the character or an underscore and concatenate those together.
+  * A function that returns a string representing the word. This calls the function on each letter object (the first function defined in `letter.js`) that displays the character or an underscore and concatenates those together.
 
   * A function that takes a character as an argument and calls the guess function on each letter object (the second function defined in `Letter.js`)
 
-* **index.js**: The file containing the logic for the course of the game, which depends on `Word.js` and:
+## index.js
+The file containing the logic for the course of the game, which depends on `word.js` and:
 
-  * Randomly selects a word and uses the `Word` constructor to store it
+  * Randomly selects a word and uses the `word` constructor to store it
 
   * Prompts the user for each guess and keeps track of the user's remaining guesses
 
-3. `Letter.js` *should not* `require` any other files.
+3. `letter.js` *does not* `require` any other files.
 
-4. `Word.js` *should only* require `Letter.js`
-
-5. **HINT:** Write `Letter.js` first and test it on its own before moving on, then do the same thing with `Word.js`
-
-6. **HINT:** If you name your letter's display function `toString`, JavaScript will call that function automatically whenever casting that object to a string (check out this example: <https://jsbin.com/facawetume/edit?js,console>)
-
-- - -
-
-### Notes
-
-* Since this assignment is a command-line application, you don't need to deploy it anywhere. You will, however, be required to upload it to Github.
-
-* Remember to include a `package.json` file containing your project dependencies in your Github repo!
-
-### Reminder: Submission on BCS
-
-* Please submit the link to the Github Repository!
-
-### Minimum Requirements
-
-Attempt to complete homework assignment as described in instructions. If unable to complete certain portions, please pseudocode these portions to describe what remains to be completed. Adding a README.md as well as adding this homework to your portfolio are required as well and more information can be found below.
-
-- - -
-
-### Create a README.md
-
-Add a `README.md` to your repository describing the project. Here are some resources for creating your `README.md`. Here are some resources to help you along the way:
-
-* [About READMEs](https://help.github.com/articles/about-readmes/)
-
-* [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
-
-- - -
-
-### Add To Your Portfolio
-
-After completing the homework please add the piece to your portfolio. Make sure to add a link to your updated portfolio in the comments section of your homework so the TAs can easily ensure you completed this step when they are grading the assignment. To receive an 'A' on any assignment, you must link to it from your portfolio.
-
-- - -
-
-### One More Thing
-
-If you have any questions about this project or the material we have covered, please post them in the community channels in slack so that your fellow developers can help you! If you're still having trouble, you can come to office hours for assistance from your instructor and TAs.
-
-**Good Luck!**
-
-- - -
+4. `word.js` *does only* require `letter.js`
